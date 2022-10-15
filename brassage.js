@@ -1,6 +1,7 @@
 
   var listeima;
   function affichage(){
+
     document.getElementById('initialisation').innerHTML = null;
     listeima = []
     for (let i =0 ; i< 52; i++){
@@ -16,6 +17,7 @@
   }
 
   function diviser_carte(listeima) {
+
     moitie = listeima.length/2;
     liste1 = []
     for (let i = 0; i < moitie; i++) {
@@ -30,6 +32,7 @@
   
 
   function brassage() {
+    
     document.getElementById('initialisation').innerHTML = null;
     liste2 = diviser_carte(listeima); 
     for (let i=0; i < liste2.length ; i++) {
