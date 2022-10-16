@@ -8,8 +8,8 @@
       listeima.push("image.jpg/"+i+".png");
         let img= document.createElement("img")
         img.src = "image.jpg/"+i+".png";
-        img.weight = 150;
-        img.height = 120;
+        img.weight = 100;
+        img.height = 85;
         document.getElementById('initialisation').appendChild(img)
   
     }
@@ -32,20 +32,22 @@
   
 
   function brassage() {
-    
+
     document.getElementById('initialisation').innerHTML = null;
     liste2 = diviser_carte(listeima); 
     for (let i=0; i < liste2.length ; i++) {
       let img = document.createElement("img");
       img.src = liste2[i];
-      img.weight = 150
-      img.height = 120
+      img.weight = 100;
+      img.height = 85;
       document.getElementById('initialisation').appendChild(img);       
     }
 
     listeima = liste2
   } 
-
+  window.onload = function() {
+    affichage(); 
+  }
   
 
 
