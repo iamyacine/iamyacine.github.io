@@ -48,6 +48,3 @@
   window.onload = function() {
     affichage(); 
   }
-  
-
-
